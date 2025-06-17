@@ -1,0 +1,168 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="slider">
+    <img src="IMG-20250529-WA0005.jpg" alt="IMG-20250529-WA0005.jpg">
+    <img src="IMG-20250529-WA0006.jpg" alt="IMG-20250529-WA0006.jpg">
+    <img src="IMG-20250529-WA0007.jpg" alt="IMG-20250529-WA0007.jpg">
+</div>
+<style>
+    .slider {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .slider img {
+        width: 100%;
+        display: none;
+    }
+
+    .slider img.active {
+        display: block;
+    }  
+</style>
+
+    <script>
+    const images = document.querySelectorAll('.slider img');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }
+
+    setInterval(nextImage, 90000);
+    // Initialize the first image
+    showImage(currentIndex);
+
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Image Slider</title>
+    <style>
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slider img {
+            width: 100%;
+            display: none;
+        }
+
+        .slider img.active {
+            display: block;
+        }  
+    </style>
+</head>
+<!-- <body>
+
+<div class="slider">
+    <img src="https://images.unsplash.com/photo-1606820079248-2cd9be1b3edc?auto=format&fit=crop&w=600&q=80" alt="Car 1">
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Car 2">
+    <img src="https://images.unsplash.com/photo-1616500069186-1b92b2b4dd8b?auto=format&fit=crop&w=600&q=80" alt="Car 3">
+</div>
+
+<script>
+    const images = document.querySelectorAll('.slider img');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }
+
+    setInterval(nextImage, 3000); // changed to 3 seconds for better visibility
+    showImage(currentIndex);
+</script>
+
+</body>
+</html> -->
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Image Slider</title>
+    <style>
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slider img {
+            width: 100%;
+            display: none;
+        }
+
+        .slider img.active {
+            display: block;
+        }  
+    </style>
+</head>
+<body>
+
+<div class="slider">
+    <img src="https://images.unsplash.com/photo-1606820079248-2cd9be1b3edc?auto=format&fit=crop&w=600&q=80" alt="Car 1">
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Car 2">
+    <img src="https://images.unsplash.com/photo-1616500069186-1b92b2b4dd8b?auto=format&fit=crop&w=600&q=80" alt="Car 3">
+</div>
+
+<script>
+    const images = document.querySelectorAll('.slider img');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }
+
+    setInterval(nextImage, 3000); // changed to 3 seconds for better visibility
+    showImage(currentIndex);
+</script>
+
+</body>
+</html>
